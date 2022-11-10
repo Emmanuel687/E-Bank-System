@@ -75,9 +75,9 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 let letters = [`a`,`b`,`c`,`d`,`e`];
 
-letters.slice(2)  
-letter.slice(2,3)  
-letter.slice()       
+console.log(letters.slice(2))  
+console.log(letters.slice(2,3))  
+console.log(letters.slice())      
 
 
 /////////////////////////////////////////////////
