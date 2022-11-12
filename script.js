@@ -100,10 +100,12 @@
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+// For Loop
 for(let i = 0; i<movements.length; i++){
   console.log(movements[i])
 }
-
+ 
+// For of Loop
 for (const movement of movements){
   if(movement>1){
     console.log(`You deposited ${movement}`)
@@ -111,3 +113,10 @@ for (const movement of movements){
     console.log(`You withdrew ${Math.abs(movement)}`)
   }
 }
+
+console.log(`--------For Each Starts here---------- `)
+// For each Loop
+movements.forEach(movemen =>{
+  let balance = movemen>1 ? `You Deposited ${Math.abs(movemen)}`: `You Withdrew ${Math.abs(movemen)}`;
+  console.log(balance)
+})
