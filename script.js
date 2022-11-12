@@ -73,27 +73,41 @@
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-let letters = [`a`,`b`,`c`,`d`,`e`];
+// let letters = [`a`,`b`,`c`,`d`,`e`];
 
-console.log(letters.splice(0,2 ));
+// console.log(letters.splice(0,2 ));
 
-letters = [`a`,`b`,`c`,`d`,`e`];
-console.log(letters.reverse())
-console.log(letters)
+// letters = [`a`,`b`,`c`,`d`,`e`];
+// console.log(letters.reverse())
+// console.log(letters)
 
-let  num1 = [`1`,`2`,`3`,`4`,`5`];
-let  num2 = [`6`,`7`,`8`,`9`,`10`];
-let  num3 = [`11`,`12`,`13`,`14`,`15`]
-let allNum =num1.concat(num1,num2,num3);
+// let  num1 = [`1`,`2`,`3`,`4`,`5`];
+// let  num2 = [`6`,`7`,`8`,`9`,`10`];
+// let  num3 = [`11`,`12`,`13`,`14`,`15`]
+// let allNum =num1.concat(num1,num2,num3);
 
 
-console.log(allNum)
+// console.log(allNum)
 /////////////////////////////////////////////////
 
-let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
-console.log(AlphLetters.join(``))
+// let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
+// console.log(AlphLetters.join(``))
 
 
-let arr = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
-console.log(arr[2])
-console.log(arr.at(4))
+// let arr = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
+// console.log(arr[2])
+// console.log(arr.at(4))
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+for(let i = 0; i<movements.length; i++){
+  console.log(movements[i])
+}
+
+for (const movement of movements){
+  if(movement>1){
+    console.log(`You deposited ${movement}`)
+  }else{
+    console.log(`You withdrew ${movement}`)
+  }
+}
