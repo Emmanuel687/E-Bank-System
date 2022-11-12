@@ -120,3 +120,10 @@ movements.forEach(movemen =>{
   let balance = movemen>1 ? `You Deposited ${Math.abs(movemen)}`: `You Withdrew ${Math.abs(movemen)}`;
   console.log(balance)
 })
+
+
+let cars = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
+cars.forEach((car ,index,array)=>{
+   let number = index + 1
+   console.log(`This is my ${number}  ${car}`)
+})
