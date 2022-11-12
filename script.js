@@ -89,3 +89,6 @@ let allNum =num1.concat(num1,num2,num3);
 
 console.log(allNum)
 /////////////////////////////////////////////////
+
+let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
+console.log(AlphLetters.join(``))
