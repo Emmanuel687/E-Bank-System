@@ -75,7 +75,7 @@
 
 let letters = [`a`,`b`,`c`,`d`,`e`];
 
-console.log(letters.splice(0,2));
+console.log(letters.splice(0,2 ));
 
 letters = [`a`,`b`,`c`,`d`,`e`];
 console.log(letters.reverse())
@@ -92,3 +92,4 @@ console.log(allNum)
 
 let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
 console.log(AlphLetters.join(``))
+
