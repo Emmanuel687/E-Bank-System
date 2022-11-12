@@ -106,11 +106,11 @@ for(let i = 0; i<movements.length; i++){
 }
  
 // For of Loop
-for (const movement of movements){
+for (const [i,movement] of movements.entries()){
   if(movement>1){
-    console.log(`You deposited ${movement}`)
+    console.log(`You deposited ${i} ${movement}`)
   }else{
-    console.log(`You withdrew ${Math.abs(movement)}`)
+    console.log(`You withdrew ${i} ${Math.abs(movement)}`)
   }
 }
 
@@ -120,7 +120,6 @@ movements.forEach(movemen =>{
   let balance = movemen>1 ? `You Deposited ${Math.abs(movemen)}`: `You Withdrew ${Math.abs(movemen)}`;
   console.log(balance)
 })
-
 
 let cars = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
 cars.forEach((car ,index,array)=>{
