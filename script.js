@@ -93,3 +93,7 @@ console.log(allNum)
 let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
 console.log(AlphLetters.join(``))
 
+
+let arr = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
+console.log(arr[2])
+console.log(arr.at(4))
