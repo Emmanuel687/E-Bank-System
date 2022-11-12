@@ -108,6 +108,6 @@ for (const movement of movements){
   if(movement>1){
     console.log(`You deposited ${movement}`)
   }else{
-    console.log(`You withdrew ${movement}`)
+    console.log(`You withdrew ${Math.abs(movement)}`)
   }
 }
