@@ -126,3 +126,14 @@ cars.forEach((car ,index,array)=>{
    let number = index + 1
    console.log(`This is my ${number}  ${car}`)
 })
+ 
+
+const currencies = new Map([
+  ['USD', 'United States dollar'],
+  ['EUR', 'Euro'],
+  ['GBP', 'Pound sterling'],
+]);
+
+currencies.forEach((value,key,map)=>{
+  console.log(`This are my ${value}, ${key}`)
+})
