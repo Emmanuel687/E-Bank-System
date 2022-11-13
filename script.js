@@ -136,5 +136,6 @@ const currencies = new Map([
 ]);
 
 currencies.forEach((value,key,map)=>{
-  console.log(`This are my ${value}, ${key}`)
+  console.log(`This are my value: ${value},
+  This is my Key: ${key}`)
 })
