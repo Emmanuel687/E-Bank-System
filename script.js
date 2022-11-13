@@ -140,7 +140,7 @@ currencies.forEach((value,key,map)=>{
   This is my Key: ${key}`)
 })
 
-
+// For Each loop in Sets
 let currenciesUnique = new Set([`USD`,`GBP`,`USD`,`EUR`,`EUR`]);
 currenciesUnique.forEach((value,_,set)=>{
      console.log(`This is my value ${value}`)})
