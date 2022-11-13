@@ -128,6 +128,7 @@ cars.forEach((car ,index,array)=>{
 })
  
 
+// For Each loop in Maps
 const currencies = new Map([
   ['USD', 'United States dollar'],
   ['EUR', 'Euro'],
