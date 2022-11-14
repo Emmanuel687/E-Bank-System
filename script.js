@@ -62,7 +62,10 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovements = (movements)=>{
+  // Overrriding InnerHTML element of Container
   containerMovements.innerHTML= ``;
+
+  // Looping in side the movement Array
   movements.forEach((mov,i)=>{
     const type = mov>1? `deposit`:`withdrawal` 
     const html = ` 
@@ -70,7 +73,7 @@ const displayMovements = (movements)=>{
       <div class="movements__type movements__type--${type}">${i+1}</div>
       <div class="movements__value">${mov}</div>
     </div>`
-
+  // Inserting HTML inside the container Movement
     containerMovements.insertAdjacentHTML(`afterbegin`,html);
   })
 
@@ -115,6 +118,7 @@ console.log(arr.at(4))
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+
 // For Loop
 for(let i = 0; i<movements.length; i++){
   console.log(movements[i])
@@ -134,6 +138,12 @@ console.log(`--------For Each Starts here---------- `)
 movements.forEach(movemen =>{
   let balance = movemen>1 ? `You Deposited ${Math.abs(movemen)}`: `You Withdrew ${Math.abs(movemen)}`;
   console.log(balance)
+})
+
+// map method
+const eurToUsd = 1.1;
+movements.map((move)=>{
+  return move*
 })
 
 let cars = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
