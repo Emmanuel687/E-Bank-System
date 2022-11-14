@@ -63,9 +63,14 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovements = (movements)=>{
   movements.forEach((mov,i)=>{
+    const type = mov>1? `deposit`:`withdrawal` 
+    const html = ` 
+    <div class="movements__row">
+      <div class="movements__type movements__type--${type}">${i+1}</div>
+      <div class="movements__value">${mov}</div>
+    </div>`
 
   })
-
 
 }
 displayMovements(account1.movements)
