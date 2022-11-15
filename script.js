@@ -36,30 +36,30 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 // Elements
-// const labelWelcome = document.querySelector('.welcome');
-// const labelDate = document.querySelector('.date');
-// const labelBalance = document.querySelector('.balance__value');
-// const labelSumIn = document.querySelector('.summary__value--in');
-// const labelSumOut = document.querySelector('.summary__value--out');
-// const labelSumInterest = document.querySelector('.summary__value--interest');
-// const labelTimer = document.querySelector('.timer');
+const labelWelcome = document.querySelector('.welcome');
+const labelDate = document.querySelector('.date');
+const labelBalance = document.querySelector('.balance__value');
+const labelSumIn = document.querySelector('.summary__value--in');
+const labelSumOut = document.querySelector('.summary__value--out');
+const labelSumInterest = document.querySelector('.summary__value--interest');
+const labelTimer = document.querySelector('.timer');
 
-// const containerApp = document.querySelector('.app');
-// const containerMovements = document.querySelector('.movements');
+const containerApp = document.querySelector('.app');
+const containerMovements = document.querySelector('.movements');
 
-// const btnLogin = document.querySelector('.login__btn');
-// const btnTransfer = document.querySelector('.form__btn--transfer');
-// const btnLoan = document.querySelector('.form__btn--loan');
-// const btnClose = document.querySelector('.form__btn--close');
-// const btnSort = document.querySelector('.btn--sort');
+const btnLogin = document.querySelector('.login__btn');
+const btnTransfer = document.querySelector('.form__btn--transfer');
+const btnLoan = document.querySelector('.form__btn--loan');
+const btnClose = document.querySelector('.form__btn--close');
+const btnSort = document.querySelector('.btn--sort');
 
-// const inputLoginUsername = document.querySelector('.login__input--user');
-// const inputLoginPin = document.querySelector('.login__input--pin');
-// const inputTransferTo = document.querySelector('.form__input--to');
-// const inputTransferAmount = document.querySelector('.form__input--amount');
-// const inputLoanAmount = document.querySelector('.form__input--loan-amount');
-// const inputCloseUsername = document.querySelector('.form__input--user');
-// const inputClosePin = document.querySelector('.form__input--pin');
+const inputLoginUsername = document.querySelector('.login__input--user');
+const inputLoginPin = document.querySelector('.login__input--pin');
+const inputTransferTo = document.querySelector('.form__input--to');
+const inputTransferAmount = document.querySelector('.form__input--amount');
+const inputLoanAmount = document.querySelector('.form__input--loan-amount');
+const inputCloseUsername = document.querySelector('.form__input--user');
+const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovements = (movements)=>{
   // Overrriding InnerHTML element of Container
@@ -79,31 +79,9 @@ const displayMovements = (movements)=>{
 
 }
 displayMovements(account1.movements)
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// LECTURES
 
-// const currencies = new Map([
-//   ['USD', 'United States dollar'],
-//   ['EUR', 'Euro'],
-//   ['GBP', 'Pound sterling'],
-// ]);
-
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
-// let letters = [`a`,`b`,`c`,`d`,`e`];
-
-// console.log(letters.splice(0,2 ));
-
-// letters = [`a`,`b`,`c`,`d`,`e`];
-// console.log(letters.reverse())
-// console.log(letters)
-
-// let  num1 = [`1`,`2`,`3`,`4`,`5`];
-// let  num2 = [`6`,`7`,`8`,`9`,`10`];
-// let  num3 = [`11`,`12`,`13`,`14`,`15`]
-// let allNum =num1.concat(num1,num2,num3);
+const user = 'Steven Thomas Williams';
+const userName = user.toLowerCase().split(` `).map((user,index)=>user[0]).join(``)
+console.log(userName)
 
 
-// console.log(allNum)
-/////////////////////////////////////////////////
