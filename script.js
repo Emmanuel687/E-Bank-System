@@ -61,6 +61,8 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
 const displayMovements = (movements)=>{
   // Overrriding InnerHTML element of Container
   containerMovements.innerHTML= ``;
@@ -95,6 +97,13 @@ const createUserNames = (accs)=>{
 }
 createUserNames(accounts)
 console.log(accounts)
- 
+
+const printBalance = (movement)=>{
+   const balance = movement.reduce((total,value,index)=>total+value,0)
+   labelBalance.innerHTML= balance
+   
+
+}
+printBalance(account1.movements)
 
 
