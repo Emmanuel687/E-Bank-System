@@ -84,10 +84,11 @@ displayMovements(account1.movements)
 const createUserNames = (accs)=>{
   // Looping through Accounts Array
   accs.forEach((acc)=>{
+    // Access Owner and created a Map
     acc.username = acc.owner.toLowerCase()
-                              .split(` `)
-                              .map((user,index)=>user[0])
-                              .join(``);
+                            .split(` `)
+                            .map((user,index)=>user[0])
+                            .join(``);
 
 
   })
