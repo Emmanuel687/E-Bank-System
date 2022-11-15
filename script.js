@@ -82,6 +82,16 @@ const displayMovements = (movements)=>{
 }
 displayMovements(account1.movements)
 
+
+// CalcDisplayBalance Function
+const calcDisplayBalance = (movement)=>{
+  const balance = movement.reduce((total,value,index)=>total+value,0)
+  labelBalance.textContent = `${balance}€`
+  
+
+}
+calcDisplayBalance(account1.movements)
+
 // Create UserName Function
 const createUserNames = (accs)=>{
   // Looping through Accounts Array
@@ -98,12 +108,5 @@ const createUserNames = (accs)=>{
 createUserNames(accounts)
 console.log(accounts)
 
-const printBalance = (movement)=>{
-   const balance = movement.reduce((total,value,index)=>total+value,0)
-   labelBalance.innerHTML= balance
-   
-
-}
-printBalance(account1.movements)
 
 
