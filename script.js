@@ -80,13 +80,20 @@ const displayMovements = (movements)=>{
 }
 displayMovements(account1.movements)
 
+// Create UserName Function
+const createUserNames = (accs)=>{
+  // Looping through Accounts Array
+  accs.forEach((acc)=>{
+    acc.username = acc.owner.toLowerCase()
+                              .split(` `)
+                              .map((user,index)=>user[0])
+                              .join(``);
 
-const createUserNames = (user)=>{
-  const userName = user.toLowerCase().split(` `).map((user,index)=>user[0]).join(``);
-   return userName
 
+  })
 }
-console.log(createUserNames('Steven Thomas Williams'))
+createUserNames(accounts)
+console.log(accounts)
  
 
 
