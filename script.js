@@ -36,30 +36,30 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 // Elements
-const labelWelcome = document.querySelector('.welcome');
-const labelDate = document.querySelector('.date');
-const labelBalance = document.querySelector('.balance__value');
-const labelSumIn = document.querySelector('.summary__value--in');
-const labelSumOut = document.querySelector('.summary__value--out');
-const labelSumInterest = document.querySelector('.summary__value--interest');
-const labelTimer = document.querySelector('.timer');
+// const labelWelcome = document.querySelector('.welcome');
+// const labelDate = document.querySelector('.date');
+// const labelBalance = document.querySelector('.balance__value');
+// const labelSumIn = document.querySelector('.summary__value--in');
+// const labelSumOut = document.querySelector('.summary__value--out');
+// const labelSumInterest = document.querySelector('.summary__value--interest');
+// const labelTimer = document.querySelector('.timer');
 
-const containerApp = document.querySelector('.app');
-const containerMovements = document.querySelector('.movements');
+// const containerApp = document.querySelector('.app');
+// const containerMovements = document.querySelector('.movements');
 
-const btnLogin = document.querySelector('.login__btn');
-const btnTransfer = document.querySelector('.form__btn--transfer');
-const btnLoan = document.querySelector('.form__btn--loan');
-const btnClose = document.querySelector('.form__btn--close');
-const btnSort = document.querySelector('.btn--sort');
+// const btnLogin = document.querySelector('.login__btn');
+// const btnTransfer = document.querySelector('.form__btn--transfer');
+// const btnLoan = document.querySelector('.form__btn--loan');
+// const btnClose = document.querySelector('.form__btn--close');
+// const btnSort = document.querySelector('.btn--sort');
 
-const inputLoginUsername = document.querySelector('.login__input--user');
-const inputLoginPin = document.querySelector('.login__input--pin');
-const inputTransferTo = document.querySelector('.form__input--to');
-const inputTransferAmount = document.querySelector('.form__input--amount');
-const inputLoanAmount = document.querySelector('.form__input--loan-amount');
-const inputCloseUsername = document.querySelector('.form__input--user');
-const inputClosePin = document.querySelector('.form__input--pin');
+// const inputLoginUsername = document.querySelector('.login__input--user');
+// const inputLoginPin = document.querySelector('.login__input--pin');
+// const inputTransferTo = document.querySelector('.form__input--to');
+// const inputTransferAmount = document.querySelector('.form__input--amount');
+// const inputLoanAmount = document.querySelector('.form__input--loan-amount');
+// const inputCloseUsername = document.querySelector('.form__input--user');
+// const inputClosePin = document.querySelector('.form__input--pin');
 
 const displayMovements = (movements)=>{
   // Overrriding InnerHTML element of Container
@@ -73,7 +73,7 @@ const displayMovements = (movements)=>{
       <div class="movements__type movements__type--${type}">${i+1}</div>
       <div class="movements__value">${mov}</div>
     </div>`
-  // Inserting HTML inside the container Movement
+  // Inserting HTML inside the container Move
     containerMovements.insertAdjacentHTML(`afterbegin`,html);
   })
 
@@ -107,65 +107,3 @@ displayMovements(account1.movements)
 
 // console.log(allNum)
 /////////////////////////////////////////////////
-
-let AlphLetters = [`ab`,`bc`,`cd`,`de`,`ef`];
-console.log(AlphLetters.join(``))
-
-
-let arr = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
-console.log(arr[2])
-console.log(arr.at(4))
-
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
-
-// For Loop
-for(let i = 0; i<movements.length; i++){
-  console.log(movements[i])
-}
- 
-// For of Loop
-for (const [i,movement] of movements.entries()){
-  if(movement>1){
-    console.log(`You deposited ${i} ${movement}`)
-  }else{
-    console.log(`You withdrew ${i} ${Math.abs(movement)}`)
-  }
-}
-
-console.log(`--------For Each Starts here---------- `)
-// For each Loop
-movements.forEach(movemen =>{
-  let balance = movemen>1 ? `You Deposited ${Math.abs(movemen)}`: `You Withdrew ${Math.abs(movemen)}`;
-  console.log(balance)
-})
-
-// map method
-const eurToUsd = 1.1;
-movements.map((move)=>{
-  return move*
-})
-
-let cars = [`Benz`,`Audi`,`Toyota`,`Bentley`,`Volgswagen`];
-cars.forEach((car ,index,array)=>{
-   let number = index + 1
-   console.log(`This is my ${number}  ${car}`)
-})
- 
-
-// For Each loop in Maps
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
-
-currencies.forEach((value,key,map)=>{
-  console.log(`This are my value: ${value},
-  This is my Key: ${key}`)
-})
-
-// For Each loop in Sets
-let currenciesUnique = new Set([`USD`,`GBP`,`USD`,`EUR`,`EUR`]);
-currenciesUnique.forEach((value,_,set)=>{
-     console.log(`This is my value ${value}`)})
