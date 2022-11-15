@@ -80,8 +80,13 @@ const displayMovements = (movements)=>{
 }
 displayMovements(account1.movements)
 
-const user = 'Steven Thomas Williams';
-const userName = user.toLowerCase().split(` `).map((user,index)=>user[0]).join(``)
-console.log(userName)
+
+const createUserNames = (user)=>{
+  const userName = user.toLowerCase().split(` `).map((user,index)=>user[0]).join(``);
+   return userName
+
+}
+console.log(createUserNames('Steven Thomas Williams'))
+ 
 
 
