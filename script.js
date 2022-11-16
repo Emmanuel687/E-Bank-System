@@ -123,12 +123,13 @@ let calcDisplayFunc = (movements,IntRate)=>{
                       .reduce((accum,mov)=>accum+mov,0)
   labelSumIn.textContent = `${income}`
  
-  const outcome = movements
+  const outgoing = movements
                       .filter((mov)=>mov<0)
                       .reduce((accum,mov)=>accum+mov,0)
-  labelSumOut.textContent = `${Math.abs(outcome)}`
+  labelSumOut.textContent = `${Math.abs(outgoing)}`
 
   const interest = movements
+                      .filter(mov=>mov>0)
                       .map(mov=>IntRate/100*mov)
                       .reduce((accu,move)=>accu+move,0)
   
