@@ -108,5 +108,21 @@ const createUserNames = (accs)=>{
 createUserNames(accounts)
 console.log(accounts)
 
+const euroToUsd = 1.1;
+const depositTotal =movements.filter(move => move>0)
+                             .map(move => move*euroToUsd)
+                             .reduce((accum,mov) => accum+mov,0 );
+
+                             console.log(depositTotal)
+
+                            //  
+// Calc Withdrawals
+let calcDisplayFunc = (movements)=>{
+  const income = movements
+                      .filter((mov)=>mov>0)
+                      .reduce((accum,mov)=>accum+mov,0)
+  labelSumIn.textContent = `${income}`
 
 
+}
+calcDisplayFunc(account1.movements)
