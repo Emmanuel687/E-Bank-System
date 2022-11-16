@@ -122,6 +122,11 @@ let calcDisplayFunc = (movements)=>{
                       .filter((mov)=>mov>0)
                       .reduce((accum,mov)=>accum+mov,0)
   labelSumIn.textContent = `${income}`
+ 
+  const outcome = movements
+                      .filter((mov)=>mov<0)
+                      .reduce((accum,mov)=>accum+mov,0)
+  labelSumOut.textContent = `${Math.abs(outcome)}`
 
 
 }
