@@ -117,7 +117,7 @@ const depositTotal =movements.filter(move => move>0)
 
                             //  
 // Calc Withdrawals
-let calcDisplayFunc = (movements)=>{
+let calcDisplayFunc = (movements,IntRate)=>{
   const income = movements
                       .filter((mov)=>mov>0)
                       .reduce((accum,mov)=>accum+mov,0)
@@ -128,6 +128,11 @@ let calcDisplayFunc = (movements)=>{
                       .reduce((accum,mov)=>accum+mov,0)
   labelSumOut.textContent = `${Math.abs(outcome)}`
 
+  const interest = movements
+                      .map(mov=>IntRate/100*mov)
+                      .reduce((accu,move)=>accu+move,0)
+  
+labelSumInterest.textContent = `${interest}`
 
 }
-calcDisplayFunc(account1.movements)
+calcDisplayFunc(account1.movements,account1.interestRate)
