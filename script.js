@@ -131,9 +131,16 @@ let calcDisplayFunc = (movements,IntRate)=>{
   const interest = movements
                       .filter(mov=>mov>0)
                       .map(mov=>IntRate/100*mov)
-                      .reduce((accu,move)=>accu+move,0)
+                      .filter((int,index,arr)=>int>=1)
+                       .reduce((accu,move)=>accu+move,0)
   
 labelSumInterest.textContent = `${interest}`
 
 }
 calcDisplayFunc(account1.movements,account1.interestRate)
+
+// Login button event listener.
+
+btnLogin.addEventListener(`click`,function(){
+  
+})
