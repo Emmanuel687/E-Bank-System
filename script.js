@@ -143,7 +143,12 @@ calcDisplayFunc(account1.movements,account1.interestRate)
 let currentAccount;
 btnLogin.addEventListener(`click`, function(e){
       e.preventDefault()
-      currentAccount=accounts.find(acc=>acc===inputCloseUsername.value)
+      currentAccount=accounts.find(acc=>acc.username===inputLoginUsername.value)
+
+      console.log(currentAccount)
       
+      if(currentAccount.pin === inputLoginPin.value ){
+
+      }
       
 })
