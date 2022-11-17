@@ -140,7 +140,10 @@ labelSumInterest.textContent = `${interest}`
 calcDisplayFunc(account1.movements,account1.interestRate)
 
 // Login button event listener.
-
-btnLogin.addEventListener(`click`,function(){
-  
+let currentAccount;
+btnLogin.addEventListener(`click`, function(e){
+      e.preventDefault()
+      currentAccount=accounts.find(acc=>acc===inputCloseUsername.value)
+      
+      
 })
