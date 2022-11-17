@@ -94,9 +94,8 @@ calcDisplayBalance(account1.movements)
 
 // Create UserName Function
 const createUserNames = (accs)=>{
-  // Looping through Accounts Array
   accs.forEach((acc)=>{
-    // Access Owner and created a Map
+    // Created new property username
     acc.username = acc.owner.toLowerCase()
                             .split(` `)
                             .map((user,index)=>user[0])
@@ -106,7 +105,7 @@ const createUserNames = (accs)=>{
   })
 }
 createUserNames(accounts)
-console.log(accounts)
+
 
 const euroToUsd = 1.1;
 const depositTotal =movements.filter(move => move>0)
@@ -144,10 +143,14 @@ let currentAccount;
 btnLogin.addEventListener(`click`, function(e){
       e.preventDefault()
       currentAccount=accounts.find(acc=>acc.username===inputLoginUsername.value)
-
       console.log(currentAccount)
       
       if(currentAccount.pin === inputLoginPin.value ){
+        // Display UI and message
+        // Display Movements
+        // Display Balance
+        // Display summary
+
 
       }
       
