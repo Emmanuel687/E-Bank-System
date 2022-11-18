@@ -65,6 +65,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 // Movement Array
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+// Display Movement Function
 const displayMovements = (movements)=>{
   containerMovements.innerHTML= ``;
   movements.forEach((mov,i)=>{
