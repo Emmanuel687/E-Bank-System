@@ -64,10 +64,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 const displayMovements = (movements)=>{
-  // Overrriding InnerHTML element of Container
   containerMovements.innerHTML= ``;
-
-  // Looping in side the movement Array
   movements.forEach((mov,i)=>{
     const type = mov>1? `deposit`:`withdrawal` 
     const html = ` 
@@ -75,7 +72,6 @@ const displayMovements = (movements)=>{
       <div class="movements__type movements__type--${type}">${i+1}</div>
       <div class="movements__value">${mov}</div>
     </div>`
-  // Inserting HTML inside the container Move
     containerMovements.insertAdjacentHTML(`afterbegin`,html);
   })
 
