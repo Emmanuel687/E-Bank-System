@@ -90,7 +90,7 @@ const calcDisplayBalance = (movement)=>{
 }
 calcDisplayBalance(account1.movements)
 
-// Create UserName Function
+// Create UserName Function Initial
 const createUserNames = (accs)=>{
   accs.forEach((acc)=>{
     // Created new property username
@@ -129,7 +129,7 @@ let calcDisplayFunc = (movements,IntRate)=>{
                       .filter(mov=>mov>0)
                       .map(mov=>IntRate/100*mov)
                       .filter((int,index,arr)=>int>=1)
-                       .reduce((accu,move)=>accu+move,0)
+                      .reduce((accu,move)=>accu+move,0)
   
 labelSumInterest.textContent = `${interest}`
 
