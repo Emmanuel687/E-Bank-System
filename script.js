@@ -84,10 +84,9 @@ displayMovements(account1.movements)
 
 // CalcDisplayBalance Function
 const calcDisplayBalance = (movement)=>{
-  const balance = movement.reduce((total,value,index)=>total+value,0)
+  const balance = movement.reduce((total,value)=>total+value,0)
   labelBalance.textContent = `${balance}€`
   
-
 }
 calcDisplayBalance(account1.movements)
 
