@@ -26,3 +26,10 @@ const account1 = {
     pin: 4444,
   };
   
+  const accounts = [account1, account2, account3, account4];
+
+  console.log(accounts)
+
+  accounts.forEach((account,i)=>{
+    console.log(`This is Account number ${i+1} `, account,account.username = `JT`)
+  })
