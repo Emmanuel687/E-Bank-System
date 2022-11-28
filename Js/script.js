@@ -139,6 +139,7 @@ calcDisplayFunc(account1.movements,account1.interestRate)
 // Login button event listener.
 let currentAccount;
 btnLogin.addEventListener(`click`, function(e){
+  // Prevents form from Submitting
       e.preventDefault()
       currentAccount=accounts.find(acc=>acc.username===inputLoginUsername.value)
       console.log(currentAccount)
