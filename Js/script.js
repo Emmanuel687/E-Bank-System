@@ -144,17 +144,13 @@ btnLogin.addEventListener(`click`, function(e){
       currentAccount=accounts.find(acc=>acc.username===inputLoginUsername.value)
       console.log(currentAccount)
       
-      if(currentAccount.pin === inputLoginPin.value ){
-        // Display UI and message
-        labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(` `)[0]}`; 
-        containerApp.style.opacity = 100;
-        // Display Movements
-        // Display Balance
-        // Display summary
+      if(currentAccount.pin === Number(inputLoginPin.value)){
+        console.log(`Login`)
+      }
 
 
       }
       
-})
+)
 
 
