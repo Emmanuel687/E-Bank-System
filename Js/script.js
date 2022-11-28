@@ -88,7 +88,7 @@ const calcDisplayBalance = (movement)=>{
   labelBalance.textContent = `${balance}€`
   
 }
-calcDisplayBalance(account1.movements)
+
 
 // Create UserName Function Initial
 const createUserNames = (accs)=>{
@@ -150,13 +150,19 @@ btnLogin.addEventListener(`click`, function(e){
       };
       containerApp.style.opacity = 100;
 
+      // Clear Input Fields
+      inputLoginUsername .value = inputLoginPin.value = ``;
+
       // Diplay Movement
        displayMovements(currentAccount.movements)
         
       // Display Balance
       calcDisplayBalance(currentAccount.movements)
 
-      
+      // Display Summary
+       calcDisplayFunc(currentAccount.movements)
+
+
 
 
 
