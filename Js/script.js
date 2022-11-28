@@ -79,7 +79,7 @@ const displayMovements = (movements)=>{
   })
 
 }
-displayMovements(account1.movements)
+   
 
 
 // CalcDisplayBalance Function
@@ -145,10 +145,19 @@ btnLogin.addEventListener(`click`, function(e){
       console.log(currentAccount)
       
       if(currentAccount?.pin === Number(inputLoginPin.value)){
-      // Display Message
+      // Display Message and UI
       labelWelcome.textContent = `Welcome Back, ${currentAccount.owner.split(` `)[0]}`
       };
       containerApp.style.opacity = 100;
+
+      // Diplay Movement
+       displayMovements(currentAccount.movements)
+        
+      // Display Balance
+      calcDisplayBalance(currentAccount.movements)
+
+      
+
 
 
       }
