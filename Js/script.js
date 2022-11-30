@@ -220,10 +220,12 @@ btnClose.addEventListener(`click`, function(e){
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-
+let sorted = false;
 btnSort.addEventListener(`click`,function(e){
   e.preventDefault();
-  displayMovements(currentAccount.movements,true)
+  displayMovements(currentAccount.movements,!sorted);
+  sorted = !sorted;
+
 
 
 })
