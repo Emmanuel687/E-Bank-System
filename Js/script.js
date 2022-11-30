@@ -189,7 +189,16 @@ btnTransfer.addEventListener('click', function (e) {
 });
 
 btnLoan.addEventListener(`click`,function(e){
-  e.preventDefault()
+  e.preventDefault();
+
+  const amount = Number(inputLoanAmount.value);
+  if(amount>0 && currentAccount.movements.some(mov => mov >= amount*0.1)){
+      // Add Movement
+      currentAccount.movements.push(amount)
+
+      // Update UI
+      updateUI (currentAccount)
+  }
 })
 
 btnClose.addEventListener(`click`, function(e){
@@ -213,4 +222,8 @@ btnClose.addEventListener(`click`, function(e){
 // LECTURES
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const accountMovements = accounts.map(acc => acc.movements);
+const allMovements = accountMovements.flat();
+const overalBalance = allMovements.reduce((acc,move)=> acc+move,0);
 
