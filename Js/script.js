@@ -221,9 +221,17 @@ btnClose.addEventListener(`click`, function(e){
 /////////////////////////////////////////////////
 // LECTURES
 
+btnSort.addEventListener(`click`,function(e){
+  e.preventDefault();
+  displayMovements(currentAccount.movements,true)
+
+
+})
+
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const accountMovements = accounts.map(acc => acc.movements);
-const allMovements = accountMovements.flat();
-const overalBalance = allMovements.reduce((acc,move)=> acc+move,0);
+const overallBalance = accounts.map(acc => acc.movements)
+                               .flat()
+                               .reduce((acc,move)=> acc+move,0);
 
+console.log(overallBalance)
