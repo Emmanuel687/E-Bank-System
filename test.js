@@ -36,4 +36,5 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 
-con
+const bankDepositSum = accounts.map(acc => acc.movements).flat().reduce((acc,value)=>acc+value,0);
+console.log(bankDepositSum)
