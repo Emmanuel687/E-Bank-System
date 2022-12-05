@@ -52,3 +52,13 @@ const numdeposits1000 = accounts
     .length
 
 console.log(numdeposits1000)
+
+// Exercise Number 3
+
+// This Is a Nice Title
+const convertTitleCase = (title)=>{
+      const expection = [`a`,`an`,`the`,`but`,`or`,`on`,`in`,`with`];
+      const titleCase = title.toLowerCase().split(``)
+       console.log(titleCase)
+}
+convertTitleCase( `this is a nice Title`)
