@@ -43,3 +43,12 @@ const bankDepositSum = accounts
     .reduce((acc,value)=>acc+value,0);
 
 console.log(bankDepositSum)
+
+// Exercise Number 2
+const numdeposits1000 = accounts
+    .flatMap(acc=> acc.movements)
+    .filter(acc=>acc>1000)
+    .sort((a,b)=>a-b)
+    .length
+
+console.log(numdeposits1000)
