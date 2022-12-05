@@ -61,4 +61,4 @@ const convertTitleCase = (title)=>{
       const titleCase = title.toLowerCase().split(``)
       console.log(titleCase)
 }
-convertTitleCase( `this is a nice Title`)
+convertTitleCase( `this is a nice Tile`)
