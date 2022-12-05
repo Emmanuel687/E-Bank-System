@@ -36,7 +36,9 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 
-const bankDepositSum = accounts.flatMap(acc => acc.movements)
+// Exercise Number 1
+const bankDepositSum = accounts
+    .flatMap(acc => acc.movements)
     .filter(acc=>acc>0)
     .reduce((acc,value)=>acc+value,0);
 
