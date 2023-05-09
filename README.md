@@ -4,6 +4,17 @@ E-Bank-System
 # Description
 The project involved designing and developing a user-friendly interface to display real-time information about tractors on the Map and also to compare each tractors unit mileage within a weekly basis.
 
+# Images 
+Landing Page
+![LandingPage](https://github.com/Emmanuel687/E-Bank-System/assets/93251478/65a28906-aee7-4158-ac37-934832d6356f)
+
+Bank Page
+![BankPage](https://github.com/Emmanuel687/E-Bank-System/assets/93251478/bfe6326b-c818-40f9-b721-a397418aae7e)
+
+Bank Page2
+![BankPage2](https://github.com/Emmanuel687/E-Bank-System/assets/93251478/318737a5-5cc5-4e58-b48c-23ad3d67423d)
+
+
 # Technologies Used
 HTML
 
